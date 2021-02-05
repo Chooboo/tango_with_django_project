@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
-    'django.contrib.auth.hashers.PBKDF22SHA1PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 )
 
 
@@ -140,3 +140,6 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 MEDIA_ROOT = MEDIA_DIR
 
 MEDIA_URL = '/media/'
+
+
+LOGIN_URL = 'rango:login'
